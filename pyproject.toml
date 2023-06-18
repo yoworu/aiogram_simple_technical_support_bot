@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aiogram-simple-technical-support-bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "aiogram_simple_technical_support_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "3.0.0b7"
+python-dotenv = "^1.0.0"
+redis = {extras = ["hiredis"], version = "^4.5.5"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
